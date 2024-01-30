@@ -1,15 +1,27 @@
-#name: HelloWorldWorkflow
-# 'on':
-#   github:
-#     branches:
-#       only: main
-on:
-  push:
-    branches:
-      - main
+name: HelloWorldWorkflow
+
 jobs:
   HelloWorld:
     runs-on: CPU
     steps:
       - name: Print Hello World
-        run: echo "Hello, World!"
+        run: python "C:\Users\Dhanushmanth\OneDrive\Desktop\wf6\hello.py"
+
+
+
+
+# #name: HelloWorldWorkflow
+# # 'on':
+# #   github:
+# #     branches:
+# #       only: main
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   HelloWorld:
+#     runs-on: CPU
+#     steps:
+#       - name: Print Hello World
+#         run: echo "Hello, World!"
