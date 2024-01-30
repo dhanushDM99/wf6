@@ -1,10 +1,11 @@
-# name: HelloWorldWorkflow
+name: HelloWorldWorkflow
+
 jobs:
   HelloWorld:
     runs-on: GPU
     steps:
       - name: Print Hello World
-        run: python "C:\Users\Dhanushmanth\OneDrive\Desktop\wf6\hello.py"
+        run: python "C:\\Users\\Dhanushmanth\\OneDrive\\Desktop\\wf6\\hello.py"
 
 
 # #name: HelloWorldWorkflow
