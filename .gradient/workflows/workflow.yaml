@@ -1,0 +1,11 @@
+# name: HelloWorldWorkflow
+'on':
+  github:
+    branches:
+      only: main
+jobs:
+  HelloWorld:
+    runs-on: [choose the environment suitable for your task, e.g., CPU or GPU]
+    steps:
+      - name: Print Hello World
+        run: bash /path/to/your/script/hello_world.sh
