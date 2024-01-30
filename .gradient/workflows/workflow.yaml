@@ -1,11 +1,15 @@
 #name: HelloWorldWorkflow
-'on':
-  github:
+# 'on':
+#   github:
+#     branches:
+#       only: main
+on:
+  push:
     branches:
-      only: main
+      - main
 jobs:
   HelloWorld:
     runs-on: CPU
     steps:
       - name: Print Hello World
-        run: bash /path/to/your/script/hello_world.sh
+        run: echo "Hello, World!"
